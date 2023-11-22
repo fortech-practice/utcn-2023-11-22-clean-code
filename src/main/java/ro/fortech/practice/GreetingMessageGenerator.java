@@ -1,7 +1,13 @@
 package ro.fortech.practice;
 
+import ro.fortech.practice.clock.Clock;
+
 public class GreetingMessageGenerator {
-    private final InternalCLock clock = new InternalCLock();
+    private final Clock clock;
+
+    public GreetingMessageGenerator(Clock clock) {
+        this.clock = clock;
+    }
 
     public String generateGreetingMessage() {
         return generateGreetingMessage(null);
