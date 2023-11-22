@@ -2,6 +2,8 @@ package ro.fortech.practice;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        GreetingMessageGenerator generator = new GreetingMessageGenerator();
+        String message = generator.generateGreetingMessage("Buggs Bunny");
+        System.out.println(message);
     }
 }
